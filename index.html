@@ -53,15 +53,15 @@
 				<div class="col-lg-6">
 					<h1>5 PRINCÍPIOS BÁSICOS PARA ATINGIR SUA MELHOR FORMA</h1>
 <p>LIVE 100% GRATUITA | 100% ONLINE</p>
-					<form action="mailto:rafaelhajj@gmail.com" method="post" enctype="text/plain">
-					  <div class="form-group">
-  					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nome" required>
-					  </div>
-            <div class="form-group">
-					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
-					  </div><br>
-					  <button type="submit" class="btn btn-warning btn-lg">Quero participar!</button>
-					</form>
+<form role="form" action="form.php" method="post" enctype="text/plain">
+  <div class="form-group">
+      <input type="text" class="form-control" id="Name" name="Name"placeholder="Nome" required>
+  </div>
+  <div class="form-group">
+    <input type="email" class="form-control" id="Email" name="Email" placeholder="Email" required>
+  </div><br>
+  <button type="submit" name="submit" class="btn btn-warning btn-lg">Quero participar!</button>
+</form>
 				</div><!-- /col-lg-6 -->
 				<div class="col-lg-6">
 					<img class="img-responsive" src="assets/img/ipad-hand.png" alt="">
@@ -115,14 +115,14 @@
 		<hr>
 		<div class="row centered">
 			<div class="col-lg-6 col-lg-offset-3">
-        <form role="form" action="mailto:rafaelhajj@gmail.com" method="post" enctype="text/plain">
+        <form role="form" action="form.php" method="post" enctype="text/plain">
           <div class="form-group">
               <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nome" required>
           </div>
           <div class="form-group">
             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
           </div><br>
-          <button type="submit" class="btn btn-warning btn-lg">Quero participar!</button>
+          <button type="submit" name="submit" class="btn btn-warning btn-lg">Quero participar!</button>
         </form>
 			</div>
 			<div class="col-lg-3"></div>
@@ -163,14 +163,14 @@
 		<hr>
 		<div class="row centered">
 			<div class="col-lg-6 col-lg-offset-3">
-        <form role="form" action="mailto:rafaelhajj@gmail.com" method="post" enctype="text/plain">
+        <form role="form" action="form.php" method="post" enctype="text/plain">
           <div class="form-group">
               <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nome" required>
           </div>
           <div class="form-group">
             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
           </div><br>
-          <button type="submit" class="btn btn-warning btn-lg">Quero participar!</button>
+          <button type="submit" name="submit" class="btn btn-warning btn-lg">Quero participar!</button>
         </form>
 			</div>
 			<div class="col-lg-3"></div>
@@ -205,14 +205,14 @@
 		<hr>
 		<div class="row centered">
 			<div class="col-lg-6 col-lg-offset-3">
-        <form role="form" action="mailto:rafaelhajj@gmail.com" method="post" enctype="text/plain">
+        <form role="form" action="form.php" method="post" enctype="text/plain">
           <div class="form-group">
               <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nome" required>
           </div>
           <div class="form-group">
             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
           </div><br>
-          <button type="submit" class="btn btn-warning btn-lg">Quero participar!</button>
+          <button type="submit" name="submit" class="btn btn-warning btn-lg">Quero participar!</button>
         </form>
 			</div>
 			<div class="col-lg-3"></div>
@@ -227,6 +227,16 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+  </script>
+     <script>
+      $("#submit").click(function(){
 
+          alert("Formulario Enviado");
+
+      });
+
+
+
+  </script>
   </body>
 </html>
